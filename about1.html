@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.column {
+  float: left;
+  width: 40%;
+  padding: 30px;
+  text-align: right;
+}
+img {
+  border: 5px solid #555;
+}
+div.desc {
+	color: white;
+  padding: 10px;
+  text-align: left;
+  font-size: 30px;
+  font-family: "Times New Roman";
+  text-align: center;
+}
+	</style>
+	<title>Results</title>
+	<link rel="shortcut icon" href="{{url_for('static',filename='fav.ico')}}">
+</head>
+<body>
+	<body style="background-image: url('https://awsinsurance.com/wp-content/uploads/2019/09/AWS-September-Blog-Image.jpg');">
+	<div class="row">
+  <div class="column">
+  	<div class="desc">Comparision of Accuracy and Error rates</div>
+  	 <img src="{{url_for('static',filename='features.jpeg')}}"  style="width:100%">
+  </div>
+  <div class="column">
+  	<div class="desc">Performance Measure of the classifier</div>
+    <img src="{{url_for('static',filename='result.jpeg')}}"  style="width:93%">
+
+  </div>
+  
+</body>
+</html>

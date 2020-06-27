@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Training Models</title>
+	<link rel="shortcut icon" href="{{url_for('static',filename='fav.ico')}}">
+	<style type="text/css">
+		.column {
+  float: left;
+  width: 40%;
+  padding: 30px;
+  text-align: right;
+  
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+img {
+  border: 5px solid #555;
+}
+div.desc {
+	color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Times New Roman";
+  
+}
+h1{
+	text-align: center;
+	font-size: 40px;
+	color: white
+}
+
+
+	</style>
+	<title></title>
+</head>
+
+<body style="background-image: url('https://awsinsurance.com/wp-content/uploads/2019/09/AWS-September-Blog-Image.jpg'); ">
+	<h1>Measures of Training Models</h1>
+	<center>
+<div class="row">
+  <div class="column">
+  	<div class="desc">Comparision Graph</div>
+    <img src="{{url_for('static',filename='comparision.png')}}"  style="width:80%">
+  </div>
+  <div class="column">
+  	<div class="desc">Support Vector Machine</div>
+    <img src="{{url_for('static',filename='svm.png')}}"  style="width:80%">
+  </div>
+  <div class="row">
+  <div class="column">
+  	<div class="desc">Artificial Neural Networks</div>
+    <img src="{{url_for('static',filename='Ann.png')}}"  style="width:80%">
+  </div>
+  <div class="column">
+  	<div class="desc">Random Forest Classifier</div>
+    <img src="{{url_for('static',filename='rf.png')}}"  style="width:80%">
+	
+  </div>
+  </center>
+</body>
+</html>

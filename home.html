@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+</style>
+
+	<head>
+		<link rel="shortcut icon" href="{{url_for('static',filename='fav.ico')}}">
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	 <title> Phishing Detector</title>
+	</head>
+	
+	<body style="background-image: url('https://awsinsurance.com/wp-content/uploads/2019/09/AWS-September-Blog-Image.jpg');">
+	 <center style="margin-top: 90px;">
+      <h1 class="text-white">Phishing Detector</h1>
+	  
+		 <form method="POST" action="{{url_for('getURL')}}">
+		  <div class="input-group input-group-lg" style="width: 1000px;margin-top: 50px">
+		 
+		   <div class="input-group-prepend">
+          
+           </div>
+		
+			<input type="text" placeholder="Enter the URL here" class="form-control" name="url"   value="{{request.form.url}}"  required="required"/>
+		
+		       <button type="submit" class="btn getResult btn-primary btn-lg mb-2" style="margin-left: 10px" value="CheckURL">Check</button>
+		
+	  
+	 
+	       </div>
+		   
+		   </form>
+		   <br> <br><br><br>
+		   
+		   <h3 style="color:yellow;"> {{ error }} </h3>
+	              <br><br><br><br> <br><br><br><br>
+		 		  
+	  <a style="font-size:30px;" href="{{url_for('getAbout')}}">Click here to know more!!</a><br><br>
+	  <a style="font-size:30px;" href="{{url_for('getAbout1')}}">Further Details!!</a>
+	  <br><br><br><br><br><br><br>
+	  <footer style="font-size:20px;">
+  
+  <p><a href="mailto:projectsp3.ksit@gmail.com">Contact us</a></p>
+  <p>Developed by: SP3</p>
+</footer>
+	</body>
+
+</html>
