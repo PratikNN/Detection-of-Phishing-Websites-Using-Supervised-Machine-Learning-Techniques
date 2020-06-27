@@ -1,3 +1,4 @@
 Keep all the html files in a folder called "templates" and images in the folder named "static".
 Software requirements: 1.Python 3.5  2. Flask 3. Jupyter notebook (for development) 
 Code can be run with terminal/command prompt using localhost
+To run the project type "python app.py" in command prompt,then you will get the IP address copy and paste it in your favorite browser. Then enter the URL you want to check and hit "Check" button, you will get the result.
